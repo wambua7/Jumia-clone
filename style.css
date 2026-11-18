@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    display: grid;
+    grid: "heading heading heading heading" 80px
+        "sidebar content content content" 500px
+        "footer footer footer footer"150px;
+    margin: 10px;
+    padding: 14px;
+    gap: 2em;
+}
+.heading{
+    grid-area: heading;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    box-shadow: 5px 0 3px grey;
+    border-radius: 12px;
+
+}
+h1{
+    font-size: 34px;
+    font-weight: 600;
+}
+#logo{
+    background-color: white;
+    border-radius: 50%;
+
+}
+.navbar ul{
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 6px;
+}
+nav a:hover{
+    background-color: orange;
+}
