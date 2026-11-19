@@ -7,7 +7,7 @@
     display: grid;
     grid: "heading heading heading heading" 80px
         "sidebar content content content" 500px
-        "footer footer footer footer"150px;
+        "footer footer footer footer"80px;
     margin: 10px;
     padding: 14px;
     gap: 2em;
@@ -34,16 +34,49 @@ h1{
 .navbar ul{
     display: flex;
 }
-nav ul li {
+.navbar ul li {
     list-style: none;
     margin: 15px;
 }
 .navbar a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     border-radius: 6px;
 }
-nav a:hover{
+.navbar a:hover{
     background-color: orange;
+}
+.side-bar{
+    grid: sidebar;
+    margin: 0 10px;
+    border: 1px solid black;
+    box-shadow: 5px -2px 4px grey, -5px 0px 4px grey ;
+    border-radius: 5px;
+}
+.side-bar ul li{
+    font-size: 18px;
+    list-style: none;
+    margin: 15px;
+    padding: 6px;
+}
+.side-bar a{
+    text-decoration: none;
+}
+.content{
+    grid: content;
+    margin: 4px;
+    padding: 12px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+.items{
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px grey;
+    padding: 12px;
+    
 }
