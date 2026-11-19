@@ -75,7 +75,7 @@ h1{
     grid-area: sidebar;
     margin: 0 10px;
     border: 1px solid black;
-    box-shadow: 5px -2px 4px grey, -5px 0px 4px grey ;
+    box-shadow: 0px -2px 4px grey, -5px 0px 4px grey ;
     border-radius: 5px;
 }
 .side-bar ul li{
@@ -126,7 +126,6 @@ h1{
     font-weight: 300;
     font-size: 16px;
     text-align: center;
-    text-shadow: 0px -3px 1px black;
     margin: 6px 0;
     color: black;
 }
@@ -203,4 +202,16 @@ h1{
 .visit-us a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 700px){
+    .container{
+        display: block;
+    }
+    .side-bar{
+        display: none;
+    }
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
