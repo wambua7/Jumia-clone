@@ -2,16 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+    max-width: 100%;
+    height: auto;
+    margin: 6px;
 }
 .container{
     display: grid;
-    grid: "heading heading heading heading" 80px
+    grid: "banner banner banner banner" 80px 
+        "heading heading heading heading" 80px
         "sidebar content content content" auto
         "footer footer footer footer" 150px
         /220px 1fr 1fr 1fr ;
-    margin: 10px;
+    margin: 5px;
     padding: 14px;
     gap: 2em;
+}
+.banner{
+    grid-area: banner;
+    max-width: 100%;
+    height: auto;
 }
 .heading{
     grid-area: heading;
@@ -36,6 +48,16 @@ h1{
 .navbar ul{
     display: flex;
 }
+.navbar input{
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+}
+.search{
+    background-color: darkorange;
+    border-radius: 12px;
+    padding: 6px;
+}
 .navbar ul li {
     list-style: none;
     margin: 15px;
@@ -57,13 +79,14 @@ h1{
     border-radius: 5px;
 }
 .side-bar ul li{
-    font-size: 18px;
+    font-size: 14px;
     list-style: none;
     margin: 15px;
     padding: 6px;
 }
 .side-bar a{
     text-decoration: none;
+    color: black;
 }
 .content{
     grid-area: content;
@@ -96,20 +119,20 @@ h1{
     margin: 8px;
     align-items: center;
 }
+.items:hover{
+    background-color: white;
+}
 .items h3{
-    font-weight: 400;
-    font-size: 22px;
+    font-weight: 300;
+    font-size: 16px;
     text-align: center;
-    text-shadow: 0px -3px 2px black;
+    text-shadow: 0px -3px 1px black;
     margin: 6px 0;
     color: black;
 }
 .items p{
     margin-left: 5px;
-    font-size: 20px;
-}
-.items{
-    font-size: 18px;
+    font-size: 14px;
 }
 .items img{
     width: 50%;
@@ -149,6 +172,7 @@ h1{
 }
 .quick-links a{
     text-decoration: none;
+    color: black;
 }
 .quick-links a:hover{
     background-color: orange;
@@ -178,4 +202,5 @@ h1{
 }
 .visit-us a {
     text-decoration: none;
+    color: black;
 }
